@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The EndoAlly App Privacy Policy</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+        h1, h2, h3 { color: #cc0000; } /* Matches your app's red theme */
+        .contact-info { margin-top: 30px; padding: 15px; border: 1px solid #ccc; background-color: #f9f9f9; }
+    </style>
+</head>
+<body>
+
+    <h1>🔒 The EndoAlly App Privacy Policy</h1>
+
+    <p><strong>Effective Date: [Insert Current Date]</strong></p>
+    <p>This privacy policy explains how <strong>The EndoAlly App</strong> ([Your Name or Company Name]) collects, uses, protects, and handles your data...</p>
+
+    <h2>1. Information We Collect</h2>
+    <h2>2. Data Storage and Protection</h2>
+    <h2>3. Third-Party Services (Firebase)</h2>
+    <h2>4. User Rights and Data Deletion</h2>
+    <div class="contact-info">
+        <h2>5. Contact Information</h2>
+        <p>If you have any questions about this Privacy Policy, please contact us:</p>
+        <p><strong>Developer Name:</strong> [Your Name or Company Name]</p>
+        <p><strong>Support Email:</strong> [Your Dedicated Support Email Address]</p>
+    </div>
+
+</body>
+</html>
