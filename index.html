@@ -7,6 +7,9 @@
     <style>
         body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; }
         h1, h2, h3 { color: #cc0000; } /* Matches your app's red theme */
+        table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
         .contact-info { margin-top: 30px; padding: 15px; border: 1px solid #ccc; background-color: #f9f9f9; }
     </style>
 </head>
@@ -15,17 +18,80 @@
     <h1>🔒 The EndoAlly App Privacy Policy</h1>
 
     <p><strong>Effective Date: [Insert Current Date]</strong></p>
-    <p>This privacy policy explains how <strong>The EndoAlly App</strong> ([Your Name or Company Name]) collects, uses, protects, and handles your data...</p>
+    <p>This privacy policy explains how <strong>The EndoAlly App</strong> ([Your Name or Company Name]) collects, uses, protects, and handles your Personally Identifiable Information (PII) and sensitive health data. We are committed to protecting your privacy and ensuring transparency regarding your data.</p>
+
+    <hr>
 
     <h2>1. Information We Collect</h2>
+
+    <p>We collect information you voluntarily provide and technical data necessary for app functionality and security.</p>
+
+    <h3>A. Account Data (Stored on Firebase Servers)</h3>
+    <table>
+        <thead>
+            <tr><th>Data Collected</th><th>Purpose</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Email Address and Password (Hashed)</strong></td><td>To create and secure your user account and enable persistent login via Firebase Authentication.</td></tr>
+            <tr><td><strong>User ID (UID)</strong></td><td>A unique, anonymized identifier assigned to your account by Firebase for security and data linkage.</td></tr>
+        </tbody>
+    </table>
+
+    <h3>B. Health Data (Sensitive)</h3>
+    <p>This data is stored <strong>locally on your device</strong> using SwiftData and is used only to provide the core service of the app.</p>
+    <table>
+        <thead>
+            <tr><th>Data Collected</th><th>Purpose</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Symptom Entries</strong></td><td>Pain level, primary symptom, notes, and the timestamp of the entry. Used for tracking, analysis, and displaying history.</td></tr>
+            <tr><td><strong>Health Profile</strong></td><td>Medications, chronic conditions, doctor's name, and doctor's phone number. Used for personal reference and potential data sharing by the user.</td></tr>
+        </tbody>
+    </table>
+
+    <h3>C. Technical/Usage Data</h3>
+    <p>We collect non-personal data (like device type, crash logs, and general feature usage) via Firebase Analytics to help us troubleshoot, improve app stability, and understand user behavior.</p>
+
+    <hr>
+
     <h2>2. Data Storage and Protection</h2>
+    <p>We prioritize the security and confidentiality of your sensitive health information.</p>
+    <ul>
+        <li><strong>Health Data Storage (Local):</strong> All sensitive **Symptom Entry** and **Health Profile** data is stored **locally on your device** using **SwiftData**. This data is **not** synced to our cloud servers and is secured by the security features of your iOS device (e.g., device passcode, Face ID, or Touch ID).</li>
+        <li>**Authentication Data Storage (Cloud):** Your **Email Address** and **Hashed Password** are stored securely on **Google Firebase servers** in encrypted format for authentication purposes.</li>
+        <li>**Data Sharing:** **We do not sell or rent your personal or health data to any third parties for marketing, advertising, or commercial purposes.**</li>
+    </ul>
+    
+    <hr>
+
     <h2>3. Third-Party Services (Firebase)</h2>
+    <p>We utilize third-party services for essential functions and security:</p>
+    <ul>
+        <li><strong>Authentication and Backend:</strong> We use **Google Firebase** to handle user authentication and manage your account data.</li>
+        <li><strong>Firebase Privacy Policy:</strong> You can review the privacy policy for Google Firebase and related Google services here: <a href="https://policies.google.com/privacy?hl=en-US" target="_blank">https://policies.google.com/privacy?hl=en-US</a></li>
+    </ul>
+
+    <hr>
+
     <h2>4. User Rights and Data Deletion</h2>
+    <ul>
+        <li>**Access and Modification:** You can view, modify, and delete all of your saved symptom and profile data directly within the application.</li>
+        <li>**Account Deletion (Cloud Data):** If you wish to delete your account, please contact us at the support email provided below. Deleting your account will permanently remove your email address and authentication details from our Firebase servers.</li>
+        <li>**Local Data Deletion:** Deleting the app from your device will automatically delete the local **SwiftData** container, permanently removing all your stored symptom and profile entries.</li>
+    </ul>
+
+    <hr>
+
+    <h2>5. Changes to This Policy</h2>
+    <p>We reserve the right to update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+
+    <hr>
+
     <div class="contact-info">
-        <h2>5. Contact Information</h2>
-        <p>If you have any questions about this Privacy Policy, please contact us:</p>
+        <h2>6. Contact Information</h2>
+        <p>If you have any questions about this Privacy Policy or wish to make a request regarding your data, please contact us:</p>
         <p><strong>Developer Name:</strong> [Your Name or Company Name]</p>
-        <p><strong>Support Email:</strong> [Your Dedicated Support Email Address]</p>
+        <p><strong>Support Email:</strong> <strong>balancedbyk8@gmail.com</strong></p>
     </div>
 
 </body>
